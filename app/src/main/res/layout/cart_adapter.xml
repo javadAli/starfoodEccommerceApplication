@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgCard"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="5dp"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/cartImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img"
+                    android:background="@color/white"
+                    />
+            </androidx.cardview.widget.CardView>-->
+
+            <ImageView
+                android:id="@+id/cartImg"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:src="@drawable/img" />
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@id/cartImg"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/productName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="روغن مايع مخلوط 1350 گرم سودا"
+                        android:fontFamily="@font/iransans"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/priceOneTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="79,800 "
+                        android:fontFamily="@font/iransans"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/gray700"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline4"
+                        />
+                    <TextView
+                        android:id="@+id/priceTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/priceOneTxt"
+                        android:layout_marginRight="5dp"
+                        android:text="718,200 تومان"
+                        android:fontFamily="@font/iransans"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+                    <Button
+                        android:id="@+id/numberBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="12dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+                        android:background="@drawable/redbackground"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/iransans"
+                        android:text="1 کارتن معادل9عدد"/>
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/baseline_delete_24"
+                        app:tint="@color/gray700"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>

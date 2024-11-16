@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rootLayout"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleRoot">
+        <TextView
+            android:id="@+id/homePartTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="آیتم ها"
+            android:layout_margin="5dp"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline1"
+            />
+
+        <Button
+            android:id="@+id/showAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="مشاهده همه"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:visibility="visible"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homePartRCV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>
