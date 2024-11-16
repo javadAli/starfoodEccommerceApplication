@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:colorBackground"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/loadingView">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/loadingProgressBar"
+        style="@style/SpinKitView.ThreeBounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="لطفا منتظر بمانید..."
+        android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+</LinearLayout>

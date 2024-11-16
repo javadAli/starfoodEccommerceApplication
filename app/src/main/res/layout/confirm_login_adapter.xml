@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/radioBtn"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:buttonTint="@color/gray"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/browser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="مرورگر"
+            android:textColor="@color/gray"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/systemOs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:padding="5dp"
+            android:text="سیستم عامل"
+            android:textColor="@color/gray"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/sessionIdText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:padding="5dp"
+            android:text="سیستم عامل"
+            android:visibility="gone"
+            android:textColor="@color/gray"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+            android:gravity="left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray500">
+    </LinearLayout>
+
+</LinearLayout>

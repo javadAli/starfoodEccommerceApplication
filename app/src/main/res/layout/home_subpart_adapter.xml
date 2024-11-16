@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:layoutDirection="rtl"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="140dp"
+                android:layout_height="115dp"
+                android:layout_gravity="center"
+                android:src="@drawable/fimg"/>
+
+            <TextView
+                android:id="@+id/profitIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_profit_background"
+                android:padding="10dp"
+                android:src="@drawable/starfood"
+                android:text="3%"
+                android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="135dp"
+                android:layout_height="42dp"
+                android:text="this is a test texttttttttttttttttttttttttt"
+                android:maxLines="2"
+                android:textDirection="rtl"
+                android:layout_marginTop="111dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:id="@+id/betweenLayout"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title">
+                <RelativeLayout
+                    android:id="@+id/addLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:visibility="gone"
+                    android:background="@color/gray">
+                    <ImageView
+                        android:id="@+id/addButton"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/baseline_add_24"
+                        android:padding="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/amountTxt"
+                        android:layout_width="20dp"
+                        android:layout_height="25dp"
+                        android:text="0"
+                        android:padding="5dp"
+                        android:layout_toLeftOf="@id/addButton"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+                        />
+                    <ImageView
+                        android:id="@+id/minusButton"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="5dp"
+                        android:src="@drawable/baseline_minimize_24"
+                        android:layout_toLeftOf="@id/amountTxt"
+                        />
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/addProductToCartIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:background="@drawable/rounded_add_background"
+                    android:src="@drawable/baseline_add_24"
+                    app:tint="@color/white"/>
+
+                <RelativeLayout
+                    android:id="@+id/numberLinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible"
+                    android:layout_marginRight="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/firstPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="333356"
+                        android:paddingLeft="9dp"
+                        android:textColor="@color/gray500"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/profitPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="333"
+                        android:layout_below="@id/firstPrice"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

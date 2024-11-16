@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".ui.wallet.StarActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/red_border_background"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="شیوه‌ی کسب ستاره از هرکدام از این فعالیت‌ها به شرح زیر است"
+                    android:layout_margin="10dp"
+                    android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:id="@+id/iconOne"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@drawable/redbackground"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/iconOne"
+                        android:text="خرید از استار فود"
+                        android:layout_marginRight="5dp"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iconOne"
+                    android:text="با هر خریدی که از استار فود انجام می‌دهید، به ازای مبلغ و اقلام خریداری شده، ستاره دریافت می‌کنید."
+                    android:layout_marginRight="10dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:id="@+id/icontwo"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@drawable/redbackground"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/icontwo"
+                        android:text="شرکت در ستاره استار فود"
+                        android:layout_marginRight="5dp"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iconOne"
+                    android:text="برای دریافت تعداد بیشتری ستاره، به مدت 7 روز متوالی در استار فود فعالیت کنید و سر بزنید."
+                    android:layout_marginRight="10dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:id="@+id/icon3"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@drawable/redbackground"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/icon3"
+                        android:text="استفاده از ستاره استار فود"
+                        android:layout_marginRight="5dp"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iconOne"
+                    android:text="با جمع آوری هر 500 ستاره، شما در قرعه‌کشی لاتاری شرکت می‌کنید و جوایز خود را با اولین خرید خود دریافت می‌کنید."
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iconOne"
+                    android:text="از این مکانیزم استاره در استار فود بهره‌برداری کنید تا با خرید، شرکت مداوم و جمع آوری ستاره‌ها، به جوایز و مزایای منحصر به فرد دست پیدا کنید."
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:src="@drawable/yourstar"
+                        />
+                    <TextView
+                        android:id="@+id/score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="26dp"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="امتیاز شما"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:layout_below="@id/score"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/red_border_background"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="visible">
+
+                <com.example.starfood.ui.WheelView
+                    android:id="@+id/wheelView"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="چرخش"
+                    android:padding="0dp"
+                    android:background="@drawable/circlebutton"
+                    app:layout_constraintBottom_toBottomOf="@+id/wheelView"
+                    app:layout_constraintEnd_toEndOf="@+id/wheelView"
+                    app:layout_constraintStart_toStartOf="@+id/wheelView"
+                    app:layout_constraintTop_toTopOf="@+id/wheelView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/red_border_background"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:visibility="visible">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/firstLayout"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/corner_radius_background"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/dayNumber1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <CheckBox
+                    android:id="@+id/dayCheckbox1"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/dayTick1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/check"
+                    android:visibility="visible" />
+                <ImageView
+                    android:id="@+id/dayNoTick1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/uncheck2"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dayNameFirst"
+                android:text="روز 1"
+                android:textSize="14dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/secondLayout"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/corner_radius_background"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/dayNumber2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <CheckBox
+                    android:id="@+id/dayCheckbox2"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/dayTick2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/check"
+                    android:visibility="visible" />
+                <ImageView
+                    android:id="@+id/dayNoTick2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/uncheck2"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dayNameSecond"
+                android:text="روز 2"
+                android:textSize="14dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/thirdLayout"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/corner_radius_background"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/dayNumber3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <CheckBox
+                    android:id="@+id/dayCheckbox3"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/dayTick3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/check"
+                    android:visibility="visible" />
+                <ImageView
+                    android:id="@+id/dayNoTick3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/uncheck2"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dayNameThird"
+                android:text="روز 3"
+                android:textSize="14dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/fourthLayout"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/corner_radius_background"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/dayNumber4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <CheckBox
+                    android:id="@+id/dayCheckbox4"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/dayTick4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/check"
+                    android:visibility="visible" />
+                <ImageView
+                    android:id="@+id/dayNoTick4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/uncheck2"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dayNameFourth"
+                android:text="روز 4"
+                android:textSize="14dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/fifthLayout"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/corner_radius_background"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/dayNumber5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <CheckBox
+                    android:id="@+id/dayCheckbox5"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/dayTick5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/check"
+                    android:visibility="visible" />
+                <ImageView
+                    android:id="@+id/dayNoTick5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/uncheck2"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dayNameFifth"
+                android:text="روز 5"
+                android:textSize="14dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/sixthLayout"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/corner_radius_background"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/dayNumber6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <CheckBox
+                    android:id="@+id/dayCheckbox6"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/dayTick6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/check"
+                    android:visibility="visible" />
+                <ImageView
+                    android:id="@+id/dayNoTick6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/uncheck2"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dayNameSixth"
+                android:text="روز 6"
+                android:textSize="14dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/seventhLayout"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/corner_radius_background"
+                    android:layout_margin="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/dayNumber7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1" />
+
+                    <CheckBox
+                        android:id="@+id/dayCheckbox7"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/dayTick7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/check"
+                        android:visibility="visible" />
+                    <ImageView
+                        android:id="@+id/dayNoTick7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/uncheck2"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dayNameSeventh"
+                    android:text="روز 7"
+                    android:textSize="14dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:text="هفت روز پشت سر هم مراجعه کنید و ستاره های بیشتری را به دست آورید! جایزه‌های ارزشمندی را برای شما در نظر داریم!"
+                    android:textStyle="bold"
+                    />
+        <Button
+            android:id="@+id/buttonScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="دریافت جایزه امروز"
+            />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

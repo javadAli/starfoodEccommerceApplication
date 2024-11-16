@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/radif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/rectangle_textview_background"
+            android:padding="5dp"
+            android:text="ردیف"
+            android:fontFamily="@font/iransans"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/iransans"
+            android:background="@drawable/rectangle_textview_background"
+            android:padding="5dp"
+            android:text="نام کالا"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:background="@drawable/rectangle_textview_background"
+            android:padding="5dp"
+            android:text="تعداد "
+            android:fontFamily="@font/iransans"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/unitOfMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@drawable/rectangle_textview_background"
+            android:padding="5dp"
+            android:text="قیمت واحد"
+            android:fontFamily="@font/iransans"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@drawable/rectangle_textview_background"
+            android:padding="5dp"
+            android:text="مبلغ کل "
+            android:fontFamily="@font/iransans"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

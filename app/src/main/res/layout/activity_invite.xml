@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.invite.InviteActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/red_border_background"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="کد دعوت: "
+                android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+                />
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:layout_toLeftOf="@+id/one"
+                android:paddingTop="5dp"
+                android:background="@drawable/red_border_background"
+                android:text="pkjkod"
+                android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+                />
+            <TextView
+                android:id="@+id/copyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_toLeftOf="@+id/code"
+                android:layout_marginRight="10dp"
+                android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+                android:text="کپی کردن"/>
+            <Button
+                android:id="@+id/sendSms"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redbackground"
+                android:layout_alignParentLeft="true"
+                android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+                android:text="ارسال"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_toLeftOf="@+id/code"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+            android:text="با کلیک روی کد دعوت خود و ارسال آن به همکارانتان، به راحتی می‌توانید از هر مشتری جدیدی که با کد دعوت شما ثبت نام کند، مبلغ 40 هزار تومان به ازای هر یک از همکارانتان که با کد دعوت شما عضو شود، به شما تعلق می‌گیرد ، و هر کسی که با این کد ثبت نام کند، علاوه بر خرید با کیفیت و اصالت، شما نیز با هر بار خرید همکارانتان، مبلغی از فاکتور آنها به کیف پول شما به عنوان هدیه اضافه می‌شود."/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/code"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+            android:text="استار فود بهترین هدیه برای همکارانتان است. ارسال رایگان،کیفیت بالا و قیمت مناسب کالا، و همچنین تنوع بی نظیر محصولات، تنها بخشی از مزایای استار فود است. پس همین حالا شروع کنید! کد دعوت خود را به همه ارسال کنید."/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/code"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:text="برای مشاهده اشخاصی که از کد معرف شما استفاده کرده‌اند، به پایین صفحه مراجعه کنید."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/code"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:textAppearance="@style/TextAppearance.MyTheme.Headline1"
+            android:text="اشخاصی که از کد دعوت شما استفاده کرده اند"/>
+
+        <LinearLayout
+            android:id="@+id/numberLinear"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/thirdLinear"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/mobileNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0.3"
+                android:text="#"
+                android:padding="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rectangle_textview_background"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1.7"
+                android:text="اسم"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/rectangle_textview_background"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/invitRcv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

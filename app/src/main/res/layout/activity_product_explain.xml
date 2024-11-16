@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/favoriteBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:srcCompat="@drawable/favorite_border" />
+                <ImageView
+                    android:id="@+id/likeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/favorite"
+                    android:visibility="gone"
+                    app:tint="@color/colorPrimary"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/productIv"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerInParent="true"
+                    app:viewAspectRatio="1.3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="15dp"
+                    android:layoutDirection="rtl"
+                    android:layout_marginTop="210dp">
+
+                    <TextView
+                        android:id="@+id/profitPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        android:textColor="@color/darkGray"
+                        android:fontFamily="@font/iransans"
+                        tools:text="2% تخفیف" />
+
+                    <TextView
+                        android:id="@+id/previousPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/iransans"
+                        tools:text="125000 تومان" />
+
+                    <TextView
+                        android:id="@+id/currentPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green"
+                        android:fontFamily="@font/iransans"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        tools:text="110000 تومان" />
+                    <TextView
+                        android:id="@+id/nameProduct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:fontFamily="@font/iransans"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
+                        tools:text="برنج هندي 1121 داريوش (دولتي)" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/selectNumberLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redbackground"
+                    android:gravity="center"
+                    android:layout_marginTop="230dp"
+                    android:layout_alignParentLeft="true"
+                    android:visibility="visible"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:gravity="center"
+                        android:src="@drawable/baseline_shopping_cart_24"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_toLeftOf="@+id/icon"
+                        android:gravity="center"
+                        android:text="انتخاب تعداد"
+                        android:fontFamily="@font/iransans"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/unavailableLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/redbackground"
+                    android:gravity="center"
+                    android:layout_marginTop="230dp"
+                    android:layout_alignParentLeft="true"
+                    android:visibility="gone"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_toLeftOf="@+id/empty"
+                        android:gravity="center"
+                        app:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/empty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="خبرم کنید"
+                        android:fontFamily="@font/iransans"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/setAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="245dp"
+                    android:layout_alignParentLeft="true"
+                    android:padding="5dp"
+                    android:background="@drawable/lightgreen_background"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/iransans"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="3کیلو معادل 300 کیلوگرم"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginTop="5dp"
+                >
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    >
+
+                    <TextView
+                        android:id="@+id/mainGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/iransans"
+                        android:text="گروه اصلی: " />
+
+                    <TextView
+                        android:id="@+id/mainGroupTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/mainGroup"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        android:textColor="@color/blue500"
+                        tools:text=" کالا نرخ دولتي" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:layout_marginTop="9dp">
+                    <TextView
+                        android:id="@+id/code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/iransans"
+                        android:text="کد محصول: " />
+
+                    <TextView
+                        android:id="@+id/codeTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/code"
+                        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+                        android:textColor="@color/darkGray"
+                        android:fontFamily="@font/iransans"
+                        tools:text="1164" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/iransans"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginTop="10dp"
+                >
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textAppearance="@style/TextAppearance.MyTheme.Headline1"
+                android:fontFamily="@font/iransans"
+                android:text="کالاهای مشابه"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/similarProductRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

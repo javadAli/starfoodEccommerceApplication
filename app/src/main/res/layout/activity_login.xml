@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/loginform_backgroundround"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/starfood"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ورود به استارفود"
+                android:layout_margin="15dp"
+                android:textAppearance="@style/TextAppearance.MyTheme.Headline1"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شماره موبایل"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="09120000000"
+                android:gravity="right"
+                android:padding="5dp"
+                android:shadowRadius="10"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:maxLines="1"
+                android:inputType="phone"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="کلمه عبور"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="کلمه عبور خود را وارد کنید"
+                android:gravity="right"
+                android:padding="5dp"
+                android:shadowRadius="10"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:maxLines="1"
+                android:inputType="phone"
+                />
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="145dp"
+                android:layout_height="45dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:focusable="true"
+                android:layout_marginTop="15dp"
+                android:drawableRight="@drawable/baseline_lock_24"
+                android:drawableTint="@color/white"
+                android:drawablePadding="5dp"
+                android:text="ورود به استارفود"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/login_backgroundround"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_admin"
+                android:text="ارتباط: 48286-021"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"
+                android:drawableRight="@drawable/baseline_phone_enabled_24"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/white"
+                android:layout_marginRight="16dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_poshtiban"
+                android:text="پشتیبان: 49973000-021"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"
+                android:drawableRight="@drawable/admin"
+                android:layout_marginRight="16dp"
+                android:textStyle="bold"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/white"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/logo"
+                android:background="@color/white"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:src="@drawable/enamad"
+                android:layout_margin="15dp"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
